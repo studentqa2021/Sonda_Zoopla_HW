@@ -14,7 +14,10 @@ public class BaseLogin {
 		PageFactoryZoopla obj=new PageFactoryZoopla (driver);
 		new Highlight().getColor(driver, obj.getSignin());
 		new ScreenShot().getPicture(driver,"Before Singin");
-		obj.getAcceptallcookies().click();
+		//obj.getAcceptallcookies().click();
+		//if(obj.getAcceptallcookies().isDisplayed()) {
+		//	obj.getAcceptallcookies().click();
+		//}
 		obj.getSignin().click();
 		new ScreenShot().getPicture(driver,"After Singin");
 		new Highlight().getColor(driver, obj.getEmailAddress());

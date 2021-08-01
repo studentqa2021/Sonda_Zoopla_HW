@@ -12,8 +12,8 @@ public class PageFactoryZoopla {
 		
 	}
 	
-	@FindBy(xpath="(//*[contains (text(),'Accept all cookies')])[2]")
-	private WebElement acceptallcookies; 
+//	@FindBy(xpath="(//*[contains(text(),'Accept all cookies')])[2]")
+	//private WebElement acceptallcookies; 
 	
 	@FindBy(xpath="(//*[contains(@class,'css-1rwrl3a e1niaah1')])[1] ")
 	private WebElement signin;
@@ -35,9 +35,9 @@ public class PageFactoryZoopla {
 	@FindBy(xpath="(//*[contains(@class,'esdwd6d0 css-wxwl91-StyledLink-Link e33dvwd0')])[5]")
 	private WebElement singout;
 
-	public WebElement getAcceptallcookies() {
-		return acceptallcookies;
-	}
+	//public WebElement getAcceptallcookies() {
+		//return acceptallcookies;
+	//}
 
 	public WebElement getSignin() {
 		return signin;
